@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Form</title>
+</head>
+<body>
+
+  <h2>Registration Form</h2>
+
+  <form action="/submit" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="university">University Name:</label><br>
+    <input type="text" id="university" name="university" required><br><br>
+
+    <label for="course">Course:</label><br>
+    <input type="radio" id="course1" name="course" value="Computer Science" required>
+    <label for="course1">Computer Science</label><br>
+    <input type="radio" id="course2" name="course" value="Information Technology" required>
+    <label for="course2">Information Technology</label><br>
+    <input type="radio" id="course2" name="course" value="AI" required>
+    <label for="course2">AI</label><br>
+
+    <label for="subjects">Select Subjects:</label><br>
+
+
+    <input type="checkbox" id="subject1" name="subjects" value="Mathematics">
+    <label for="subject1">Mathematics</label><br>
+    <input type="checkbox" id="subject2" name="subjects" value="Physics">
+    <label for="subject2">Physics</label><br>
+    <input type="checkbox" id="subject2" name="subjects" value="Chemistry">
+    <label for="subject2">Chemistry</label><br>
+    <input type="checkbox" id="subject2" name="subjects" value="C++">
+    <label for="subject2">C++</label><br>
+
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>

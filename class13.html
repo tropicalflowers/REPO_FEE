@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty Fruits Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-pink: #ff69b4;
+            --main-purple: #d63384;
+            --main-bg: #fff0f5;
+            --card-bg: #e0f7fa;
+            --nav-bg: #fff;
+            --nav-shadow: 0 2px 8px rgba(255,105,180,0.15);
+        }
+        body {
+            font-family: 'Quicksand', 'Segoe UI', sans-serif;
+            background-color: var(--main-bg);
+            margin: 0;
+            min-height: 100vh;
+        }
+        header {
+            background: var(--nav-bg);
+            box-shadow: var(--nav-shadow);
+            border-bottom: 3px solid var(--main-pink);
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0.5rem 1.5rem;
+        }
+        .logo {
+            font-family: 'Pacifico', cursive;
+            color: var(--main-pink);
+            font-size: 2rem;
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+        }
+        .logo span {
+            margin-left: 0.5rem;
+            font-size: 1.2rem;
+            color: var(--main-purple);
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--main-purple);
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 0.3rem 0.8rem;
+            border-radius: 8px;
+            transition: background 0.2s, color 0.2s;
+        }
+        .nav-links a:hover {
+            background: var(--main-pink);
+            color: #fff;
+        }
+        main {
+            max-width: 1000px;
+            margin: 2.5rem auto;
+            padding: 1.5rem;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(214,51,132,0.08);
+        }
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: var(--main-purple);
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+        section.fruit-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            align-items: stretch;
+        }
+        article.fruit-card {
+            background: var(--card-bg);
+            border-radius: 18px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            padding: 1.2rem 1rem 1.5rem 1rem;
+            width: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 2.5px dashed var(--main-pink);
+        }
+        article.fruit-card:hover {
+            transform: scale(1.07) rotate(-2deg);
+            box-shadow: 0 8px 32px rgba(255,105,180,0.18);
+        }
+        .fruit-img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--main-pink);
+            margin-bottom: 1rem;
+            background: #fff;
+        }
+        .fruit-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--main-purple);
+            margin-bottom: 0.3rem;
+        }
+        .fruit-desc {
+            font-size: 0.98rem;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 1.2rem 0 0.7rem 0;
+            color: #b47eb3;
+            font-size: 1rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 700px) {
+            nav, main { padding: 1rem; }
+            .nav-links { gap: 0.7rem; }
+            section.fruit-gallery { gap: 18px; }
+            article.fruit-card { width: 95vw; max-width: 320px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🍓 Fruity <span>Gallery</span></div>
+            <div class="nav-links">
+                <a href="#fruits">Fruits</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 id="fruits">Fruits Gallery</h1>
+        <section class="fruit-gallery">
+            <article class="fruit-card">
+                <img class="fruit-img" src="https://www.google.com/imgres?q=apple%20fruits&imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F184927564%2Fphoto%2Fclose-up-of-red-royal-gala-apples.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3Db8jFN8AAtNlYDPEVVccDjDxvofsI9m_q--mzMUBy8Zo%3D&imgrefurl=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fapple-fruit&docid=20hn4p7_LCUPcM&tbnid=E7mOyfr06oiMDM&vet=12ahUKEwiQvOKRlc2OAxXRRmwGHSpGGwUQM3oECAoQAA..i&w=612&h=408&hcb=2&ved=2ahUKEwiQvOKRlc2OAxXRRmwGHSpGGwUQM3oECAoQAA" alt="Apple">
+                <div class="fruit-name">Apple</div>
+                <div class="fruit-desc">Crisp, sweet, and perfect for a healthy snack.</div>
+            </article>
+            <article class="fruit-card">
+                <img class="fruit-img" src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80" alt="Mango">
+                <div class="fruit-name">Mango</div>
+                <div class="fruit-desc">Juicy and tropical, the king of fruits!</div>
+            </article>
+            <article class="fruit-card">
+                <img class="fruit-img" src="https://images.unsplash.com/photo-1574226516831-e1dff420e8e9?auto=format&fit=crop&w=400&q=80" alt="Banana">
+                <div class="fruit-name">Banana</div>
+                <div class="fruit-desc">Soft, sweet, and full of energy.</div>
+            </article>
+            <article class="fruit-card">
+                <img class="fruit-img" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Kiwi">
+                <div class="fruit-name">Kiwi</div>
+                <div class="fruit-desc">Tangy, green, and packed with vitamin C.</div>
+            </article>
+            <article class="fruit-card">
+                <img class="fruit-img" src="https://images.unsplash.com/photo-1506089676908-3592f7389d4d?auto=format&fit=crop&w=400&q=80" alt="Papaya">
+                <div class="fruit-name">Papaya</div>
+                <div class="fruit-desc">Tropical, orange, and super refreshing.</div>
+            </article>
+            <article class="fruit-card">
+                <img class="fruit-img" src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80" alt="Guava">
+                <div class="fruit-name">Guava</div>
+                <div class="fruit-desc">Fragrant, pink, and deliciously sweet.</div>
+            </article>
+            <article class="fruit-card">
+                <img class="fruit-img" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Strawberry">
+                <div class="fruit-name">Strawberry</div>
+                <div class="fruit-desc">Red, juicy, and heart-shaped treat.</div>
+            </article>
+            <article class="fruit-card">
+                <img class="fruit-img" src="https://images.unsplash.com/photo-1501876725168-00c445821c9e?auto=format&fit=crop&w=400&q=80" alt="Blueberry">
+                <div class="fruit-name">Blueberry</div>
+                <div class="fruit-desc">Tiny, blue, and bursting with flavor.</div>
+            </article>
+        </section>
+        <section id="about" style="margin-top:2.5rem;">
+            <h2 style="color:var(--main-pink);font-family:Pacifico, cursive;">About</h2>
+            <p style="max-width:600px;margin:0 auto;font-size:1.1rem;color:#555;">This gallery celebrates the beauty and variety of fruits! Each card features a fruit with a cute image and a fun description. Enjoy exploring and learning about your favorite fruits.</p>
+        </section>
+        <section id="contact" style="margin-top:2.5rem;">
+            <h2 style="color:var(--main-pink);font-family:Pacifico, cursive;">Contact</h2>
+            <p style="max-width:600px;margin:0 auto;font-size:1.1rem;color:#555;">Want to suggest a fruit or just say hi? Email us at <a href="mailto:fruitygallery@example.com" style="color:var(--main-purple);text-decoration:underline;">fruitygallery@example.com</a>!</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Fruity Gallery &mdash; Made with <span style="color:var(--main-pink);font-size:1.2em;">&#10084;&#65039;</span>
+    </footer>
+</body>
+</html>

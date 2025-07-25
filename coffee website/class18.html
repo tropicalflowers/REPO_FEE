@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background-color: #fafafa;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .container {
+      display: flex;
+      background: white;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .content {
+      flex: 2;
+      padding: 30px;
+    }
+
+    .sidebar {
+      flex: 1;
+      border-left: 1px solid #ddd;
+      padding: 30px;
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    .sidebar ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="content">
+      <h1>A Blog Post</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus, mauris a gravida placerat, turpis leo tristique sapien, a sodales odio libero at leo. Nullam augue lacus, dictum sit amet aliquam vel, volutpat ut nisi.</p>
+      <p>Cras pretium, elit eget feugiat ultricies, ipsum tortor tempor lacus, nec feugiat arcu augue sit amet erat. Suspendisse potenti. Nunc placerat tincidunt sapien euismod convallis.</p>
+    </div>
+    <div class="sidebar">
+      <h2>Recent Posts</h2>
+      <ul>
+        <li>Post One</li>
+        <li>Post Two</li>
+        <li>Post Three</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

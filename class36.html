@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .resume-container {
+      display: flex;
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 6px 32px rgba(44,62,80,0.08);
+      overflow: hidden;
+    }
+    .sidebar {
+      background: #2c3e50;
+      color: #fff;
+      min-width: 240px;
+      max-width: 260px;
+      padding: 32px 24px 32px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .sidebar h1 {
+      color: #fff;
+      font-size: 2.1rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    .sidebar .contact {
+      margin-top: 2.5rem;
+      width: 100%;
+    }
+    .sidebar .contact h2 {
+      color: #f9ca24;
+      border: none;
+      font-size: 1.1rem;
+      margin-bottom: 0.7rem;
+      padding-bottom: 0;
+      text-align: left;
+    }
+    .sidebar .contact p, .sidebar .contact a {
+      color: #fff;
+      font-size: 1rem;
+      margin: 0.2rem 0 0.2rem 0;
+      word-break: break-all;
+    }
+    .sidebar .contact a {
+      color: #f9ca24;
+      text-decoration: underline;
+    }
+    .sidebar .contact a:hover {
+      color: #fff;
+      background: #f9ca24;
+      border-radius: 4px;
+      padding: 0 2px;
+    }
+    .main-content {
+      flex: 1;
+      padding: 36px 40px 36px 40px;
+      min-width: 0;
+    }
+    .main-content h2 {
+      color: #34495e;
+      border-bottom: 2px solid #f9ca24;
+      padding-bottom: 5px;
+      margin-top: 1.5rem;
+      margin-bottom: 0.7rem;
+      font-size: 1.3rem;
+    }
+    .main-content h2:first-of-type {
+      margin-top: 0;
+    }
+    .main-content p {
+      line-height: 1.7;
+      font-size: 1.08rem;
+      margin-bottom: 1.2rem;
+    }
+    .skills-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      background: #f8f8f8;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(44,62,80,0.04);
+    }
+    .skills-table th, .skills-table td {
+      padding: 12px 14px;
+      text-align: left;
+      border-bottom: 1px solid #e1e1e1;
+    }
+    .skills-table th {
+      background: #f9ca24;
+      color: #2c3e50;
+      font-weight: bold;
+      font-size: 1.05rem;
+    }
+    .skills-table tr:last-child td {
+      border-bottom: none;
+    }
+    @media (max-width: 700px) {
+      .resume-container {
+        flex-direction: column;
+        max-width: 98vw;
+      }
+      .sidebar, .main-content {
+        padding: 18px 10vw 18px 10vw;
+      }
+      .main-content {
+        padding: 18px 5vw 18px 5vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <aside class="sidebar">
+      <h1>Tanseem Kashyap</h1>
+      <div class="contact">
+        <h2>Contact</h2>
+        <p>Email: tanseem@gmail.com</p>
+        <p>Phone: +91-134**890</p>
+        <p>Location: Chandigarh, India</p>
+        <p>LinkedIn:<br><a href="#">https://www.linkedin.com/in/tanseem-kashyap-604830334/</a></p>
+      </div>
+    </aside>
+    <section class="main-content">
+      <h2>Profile</h2>
+      <p>A highly motivated student passionate about web development and programming. Always eager to learn and grow. IS LOWKEY SMART</p>
+      <h2>Skills</h2>
+      <table class="skills-table">
+        <tr>
+          <th>Category</th>
+          <th>Skills</th>
+        </tr>
+        <tr>
+          <td>Programming</td>
+          <td>C, C++, Java, Python</td>
+        </tr>
+        <tr>
+          <td>Web Development</td>
+          <td>HTML, CSS, JavaScript</td>
+        </tr>
+        <tr>
+          <td>Tools</td>
+          <td>Git, MySQL, VS Code</td>
+        </tr>
+      </table>
+    </section>
+  </div>
+</body>
+</html>

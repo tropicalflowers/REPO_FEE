@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>document</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+    }
+    main {
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    table, th, td {
+      border: 1px solid #aaa;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    form {
+      margin-top: 30px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+ 
+
+  <!-- Header -->
+  <header>
+    <h1>My Travel Blog</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  
+  <main>
+  
+    <section>
+      <p>Welcome to my travel blog where I share stories and tips from my adventures around the world!</p>
+      <img src="desert.webp" alt="Travel" width="100%">
+    </section>
+
+    <!-- Travel Destinations Table -->
+    <section>
+      <h2>Top 3 Travel Destinations</h2>
+      <table>
+        <tr>
+          <th>Country</th>
+          <th>Best Time to Visit</th>
+          <th>Language</th>
+        </tr>
+        <tr>
+          <td>Japan</td>
+          <td>March - May</td>
+          <td>Japanese</td>
+        </tr>
+        <tr>
+          <td>Italy</td>
+          <td>April - June</td>
+          <td>Italian</td>
+        </tr>
+        <tr>
+          <td>Canada</td>
+          <td>June - August</td>
+          <td>English, French</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Travel Quote -->
+    <section>
+      <blockquote>"The world is a book and those who do not travel read only one page." – Saint Augustine</blockquote>
+    </section>
+
+    <!-- Travel Video -->
+    <section>
+      <h2>Watch My Trip</h2>
+      <video controls width="100%">
+        <source src="video.mp4" type="video/mp4" autoplay muted loop>
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Travel Form -->
+    <section>
+      <h2>Plan Your Next Trip</h2>
+      <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="destination">Destination Interest:</label>
+        <select id="destination" name="destination">
+          <option value="japan">Japan</option>
+          <option value="italy">Italy</option>
+          <option value="canada">Canada</option>
+        </select>
+
+        <label>Type of Traveler:</label>
+        <input type="radio" name="traveler" value="solo"> Solo
+        <input type="radio" name="traveler" value="group"> Group
+        <input type="radio" name="traveler" value="family"> Family
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required>
+
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 My Travel Blog. All rights reserved.
+  </footer>
+
+</body>
+</html>
